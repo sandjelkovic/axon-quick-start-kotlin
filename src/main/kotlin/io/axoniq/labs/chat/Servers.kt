@@ -5,7 +5,7 @@ import java.lang.reflect.Method
 object Servers {  // Object instead of simple Main method just because of `classLoader.loadClass("org.jgroups.stack.GossipRouter")`
     @JvmStatic
     fun main(args: Array<String>) {
-        val server: org.h2.tools.Server = org.h2.tools.Server.createTcpServer("-tcp", "-tcpAllowOthers", "-tcpPort", "9092")
+        val server: org.h2.tools.Server = org.h2.tools.Server.createTcpServer("-tcp", "-tcpAllowOthers", "-ifNotExists", "-tcpPort", "9092")
         server.start()
         println("Database running on port 9092")
         var startMethod: Method? = null
