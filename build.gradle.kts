@@ -7,8 +7,9 @@ plugins {
     kotlin("plugin.spring") version "1.3.71"
 }
 springBoot {
-    mainClassName = "io.axoniq.labs.chat.ChatScalingOutApplication" // needed because Servers introduces additional main method
+    mainClassName = "io.axoniq.labs.chat.ChatScalingOutApplicationKt" // needed because Servers introduces additional main method
 }
+
 group = "io.axoniq.labs.chat"
 version = "0.0.1-SNAPSHOT"
 
