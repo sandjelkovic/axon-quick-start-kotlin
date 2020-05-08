@@ -10,7 +10,7 @@ import org.axonframework.spring.stereotype.Aggregate
 @Aggregate
 class ChatRoom {
     @AggregateIdentifier
-    private var roomId: String? = null
+    private var roomId: String? = null  // Can also be lateinit var
     private var participants: MutableSet<String> = mutableSetOf()
 
     constructor() {} // required by Axon
