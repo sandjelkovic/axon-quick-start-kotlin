@@ -4,7 +4,7 @@ plugins {
     id("org.springframework.boot") version "2.4.5"
     id("io.spring.dependency-management") version "1.0.9.RELEASE"
     kotlin("plugin.spring") version "1.5.0"
-    kotlin("jvm") version "1.5.0"
+    kotlin("jvm") version "1.6.0"
 }
 springBoot {
     mainClassName = "io.axoniq.labs.chat.ChatScalingOutApplicationKt" // needed because Servers introduces additional main method
